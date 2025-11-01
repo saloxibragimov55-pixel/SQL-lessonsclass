@@ -1,0 +1,135 @@
+--create database sqlclass2
+--go
+
+
+--use sqlclass2 
+--go
+
+
+
+--create table classtable1 (
+--id INT,
+--Name varchar(30),
+Surname char(20)
+--)
+
+select * from classtable1
+
+create table {class table 1} (id int)
+create table "class table 2" (id int)
+
+drop table {class table 2}
+
+select id, name from calsstable1
+
+select id as N'Идентификатор', name as N'Имя' from classtable1
+
+insert into classtable1
+vales (1001, 'Odilbek')
+
+Insert into classtable1 (name ID
+values ('Asadullo', 1002)
+
+
+insert into classtable1
+Select 1005, 'Salohiddin'
+
+
+
+insert into classtable1
+select 1006, 'Safia'
+union
+select 1007, 'Sunnat'
+
+--select id, name, 'f49' as {group Name} from classtable1
+
+
+--alter table classtable1
+--add surname varchar(20)
+
+Insert into classtable1 (name, id)
+values ('Asadullo', 1002)
+
+
+select * from classtable1
+
+
+
+
+
+
+create table classtable2 (
+   id int unique, 
+   name nvarchar(30))
+
+Insert into classtable2 (name, id)
+values ('Asadullo', 1001)
+
+Insert into classtable2 (name, id)
+values ('Odilbek', null)
+
+select * from classtable2
+
+
+drop table classtable2
+
+
+create table classtable3(
+id unique not null,
+name nvarchar(30)
+)
+insert into classtable3 (name, id)
+values ('Odilbek', null)
+select * from classtable3
+
+create table classtable4(
+id INT primary key 
+
+
+
+
+
+
+
+
+
+
+create table employee (EMPID INT Primary Key,
+name nvarchar(30),
+depID int,
+constraint Fk_Employee_Department Foreign key (depID)
+  references Department(DepID)
+)
+
+
+
+creatle table department (DepID INT Primary key, depname nvarchar(40))
+
+
+drop table department 
+
+
+
+
+create table employee (EMPID INT Primary Key,
+Name nvarchar(30),
+depID int
+)
+create table department (DepID INT Primary Key, depname nvarchar(40))
+
+
+alter table employee
+add constraint FK_Employee_Department
+Foreign Key (depid)
+references department(depid)
+
+if 'Odilbek' = 'oDILBEK'
+begin
+print 'they are equal'
+end
+edlse
+begin
+print 'they are not'
+end
+
+select * from Employee
